@@ -1,0 +1,5 @@
+barbeiro
+programador
+professor
+carpinteiro
+agricultor

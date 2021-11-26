@@ -1,0 +1,5 @@
+faca
+martelo
+prato
+carro
+bola
