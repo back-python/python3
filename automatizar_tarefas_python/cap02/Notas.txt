@@ -1,0 +1,3 @@
+As expressões são calculadas da esquerda para a direita.
+Os operadores booleanos têm uma ordem de atuação, assim como os operadores matemáticos.
+Depois que todos os operadores matemáticos e de comparação forem avaliados, o Python avaliará os operadores not em primeiro lugar, em seguida os operadores and e, por fim, os operadores or.

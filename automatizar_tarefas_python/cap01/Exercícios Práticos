@@ -1,0 +1,53 @@
+Notas
+
+Linha Shebang
+A primeira linha de todos os seus programas Python deve ser uma linha shebang, que informa o computador que você quer que o Python execute esse programa. A linha começa com #!, porém o resto depende de seu sistema operacional.
+No Linux, a linha shebang é #! /usr/bin/python3.
+
+
+Exercícios práticos
+
+1. Quais das opções a seguir são operadores e quais são valores?
+   *    -> Multiplicador
+'hello' -> String
+-88.8   -> Float
+   -    -> Subtração
+   /    -> Divisão
+   +    -> Soma
+   5    -> Inteiro
+
+2. Qual das opções a seguir é uma variável e qual é uma string?
+ spam  => Aqui temos uma variável
+'spam' => Aqui temos uma string
+  60   => Aqui temos um valor inteiro
+
+3. Nomeie três tipos de dados.
+Inteiro, Boleano, Ponto Flutuante e Cadeia de Caracteres
+
+4. De que é composta uma expressão? O que fazem as expressões?
+Uma expressão é uma combinação de valores e de operadores. Todas as expressões são reduzidas a um único valor.
+
+5. Este capítulo apresentou as instruções de atribuição, por exemplo, spam =
+    10. Qual é a diferença entre uma expressão e uma instrução?
+    Uma expressão é avaliada como um único valor. Uma instrução não é.
+
+
+6. O que a variável bacon conterá após o código a seguir ser executado?
+bacon = 20
+bacon + 1
+Conterá o número 20
+
+7. Para que valores as duas expressões a seguir serão avaliadas?
+'spam' + 'spamspam'
+'spam' * 3
+Os mesmos valores
+
+8. Por que eggs é um nome válido de variável enquanto 100 é inválido?
+Nomes de variável não devem começar com números.
+
+9. Quais três funções podem ser usadas para obter uma versão inteira, de ponto flutuante ou em string de um valor?
+int(), float() e str()
+
+10. Por que a expressão a seguir causa um erro? Como você pode corrigi-la?
+'I have eaten ' + 99 + ' burritos.'
+'I have eaten ' + str(99) + ' burritos.'

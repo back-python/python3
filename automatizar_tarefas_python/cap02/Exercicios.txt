@@ -1,0 +1,81 @@
+Exercícios práticos
+1. Quais são os dois valores do tipo de dado booleano? Como eles são escritos?
+False e True;
+
+2. Quais são os três operadores booleanos?
+And, Or e Not;
+
+3. Escreva as tabelas verdade de cada operador booleano (ou seja, todas as combinações possíveis de valores booleanos para o operador e como elas são avaliadas).
+AND
+  True AND True => True
+ True AND False => False
+False AND False => False
+
+OR
+  True OR True => True
+ True OR False => True
+False OR False => False
+
+NOT
+ NOT True => False
+NOT False => True
+
+4. Para que valores as expressões a seguir são avaliadas?
+               (5 > 4) and (3 == 5) => False
+                        not (5 > 4) => False
+                (5 > 4) or (3 == 5) => True
+          not ((5 > 4) or (3 == 5)) => False
+(True and True) and (True == False) => False
+          (not False) or (not True) => True
+
+5. Quais são os seis operadores de comparação?
+==, !=, >, <, <= e >=.
+
+6. Qual é a diferença entre o operador “igual a” e o operador de atribuição?
+== -> Operador de igualdade, compara um valor a outro;
+=  -> Operador de atribuição, atribui valor a uma variável;
+
+7. Explique o que é uma condição e quando você usaria uma.
+Quando eu possuo blocos de código na minha aplicação, que eu só quero que seja executado se cumprir uma condição;
+
+8. Identifique os três blocos no código a seguir:
+spam = 0
+
+if spam == 10:
+  print('eggs')
+if spam > 5:
+  print('bacon')
+else:
+  print('ham')
+  print('spam')
+  print('spam')
+
+9. Escreva um código que exiba Hello se 1 estiver armazenado em spam, Howdy se 2 estiver armazenado em spam e Greetings! se outro valor estiver armazenado em spam.
+if spam == 1:
+    print('Hello')
+elif spam == 2:
+    print('Howndy')
+else:
+    print('Greetings')
+
+10. Que tecla você deve pressionar se o seu programa estiver preso em um loop infinito?
+Ctrol + C
+
+11. Qual é a diferença entre break e continue?
+Coninue -> Vai para a proxima itereção do laço de repetição, no exato momento em que é executado;
+  Break -> Para a execução do programa;
+
+12. Qual é a diferença entre range(10), range(0, 10) e range(0, 10, 1) em um loop for?
+Nenhuma diferença.
+
+13. Crie um pequeno programa que mostre os números de 1 a 10 usando um loop for. Em seguida, crie um programa equivalente que mostre os números de 1 a 10 usando um loop while.
+for i in range(1, 11):
+    print(i)
+
+i = 1
+while i < 11:
+    print(i)
+    i += 1
+
+14. Se você tivesse uma função chamada bacon() em um módulo chamado spam, como você a chamaria após ter importado spam?
+spam.bacon()
