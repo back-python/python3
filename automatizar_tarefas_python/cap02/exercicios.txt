@@ -36,7 +36,7 @@ NOT False => True
 =  -> Operador de atribuição, atribui valor a uma variável;
 
 7. Explique o que é uma condição e quando você usaria uma.
-Quando eu possuo blocos de código na minha aplicação, que eu só quero que seja executado se cumprir uma condição;
+Uma instrução é uma espressão que será reduzida a um valor boleano, eu a uso em estrutura de decisão no código, para executar ou não determinado bloco
 
 8. Identifique os três blocos no código a seguir:
 spam = 0
@@ -47,8 +47,8 @@ if spam > 5:
   print('bacon')
 else:
   print('ham')
-  print('spam')
-  print('spam')
+
+print('spam')
 
 9. Escreva um código que exiba Hello se 1 estiver armazenado em spam, Howdy se 2 estiver armazenado em spam e Greetings! se outro valor estiver armazenado em spam.
 if spam == 1:

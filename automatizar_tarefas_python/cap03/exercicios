@@ -1,0 +1,45 @@
+Exercícios práticos
+1. Por que é vantajoso ter funções em seus programas?
+Com o uso de funções podemos estruturar melhor nossos programas, e evitar que códigos duplicados sejam escritos.
+
+2. Em que momento o código de uma função é executado: quando a função é definida ou quando ela é chamada?
+Quando a função é chamada.
+
+3. Que instrução cria uma função?
+def <nome_da_função>():
+    pass
+
+4. Qual é a diferença entre uma função e uma chamada de função?
+para definir uma função escrevemos a palavra def, antes do seu nome, ja para chamar a função, apenas chamamos o nome acompanhado dos parênteses.
+
+5. Quantos escopos globais existem em um programa Python? Quantos escopos locais?
+Apenas um escopo global
+Podemos ter diversos
+
+6. O que acontece às variáveis em um escopo local quando a chamada da função retorna?
+O valor da variável é destruído.
+
+7. O que é um valor de retorno? Um valor de retorno pode fazer parte de uma expressão?
+É um valor retornada de uma função, pode sim.
+
+8. Se uma função não tiver uma instrução de retorno, qual será o valor de retorno de uma chamada a essa função?
+None.
+
+9. Como podemos fazer com que uma variável em uma função refira-se à variável global?
+Podemos definir a variável como global dentro da função, utilizando a palavra global.
+
+10. Qual é o tipo de dado de None?
+Valor nulo, sem valor.
+
+11. O que a instrução import areallyourpetsnamederic faz?
+Importa o módulo areallyourpetsnamederic
+
+12. Se você tivesse uma função chamada bacon() em um módulo chamado spam, como você a chamaria após ter importado spam?
+spam.bacon()
+
+13. Como podemos evitar que um programa falhe quando houver um erro?
+Podemos usar try e except, para fazer o tratamento de erros.
+
+14. De que é composta a cláusula try? De que é composta a cláusula except?
+Try é onde vai o código que queremos tratar, cajo um erro ocorra
+Except é o que vai ser feito quando o erro ocorrer

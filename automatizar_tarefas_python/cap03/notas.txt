@@ -1,0 +1,10 @@
+FUNÇÕES COMO “CAIXAS-PRETAS”
+
+Com frequência, tudo que devemos saber sobre uma função são suas entradas (os parâmetros) e o valor de saída; nem sempre será necessário se dar o trabalho de saber como o código da função realmente opera.
+Quando pensamos nas funções dessa maneira, em nível mais geral, é comum dizer que estamos tratando a função como uma “caixa-preta”.
+Essa ideia é fundamental na programação moderna. Capítulos mais adiante neste livro mostrarão diversos módulos com funções criadas por outras pessoas.
+Embora você possa dar uma espiada no código-fonte se estiver curioso, não será necessário conhecer o seu funcionamento para poder usá-lo. Pelo fato de escrever funções sem variáveis globais ser incentivado, geralmente, não será preciso se preocupar com a interação do código da função com o restante de seu programa.
+
+========================================================================
+
+
