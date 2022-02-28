@@ -1,0 +1,23 @@
+Atribuição multipla
+cat = ['fat', 'black', 'loud']
+size = cat[0]
+color = cat[1]
+disposition = cat[2]
+
+você pode digitar a linha de código a seguir:
+cat = ['fat', 'black', 'loud']
+size, color, disposition = cat
+
+EXCEÇÕES ÀS REGRAS DE INDENTAÇÃO EM PYTHON
+Há algumas exceções a essa regra de identação. Por exemplo, as listas podem ocupar diversas linhas no arquivo de código-fonte. A indentação dessas linhas não importa; o Python sabe que, até que o colchete de fechamento seja identificado, a lista não terá terminado. Por exemplo, você pode ter um código semelhante a:
+spam = [
+    'apples',
+    'oranges',
+    'bananas',
+    'cats'
+]
+print(spam)
+
+Também podemos dividir uma única instrução em várias linhas usando o caractere \ de continuação de linha no final. Pense na \ como se ela dissesse “esta instrução continua na próxima linha”. A indentação da linha após o caractere \ de continuação de linha não é significativa. Por exemplo, o código a seguir é válido em Python:
+print('Four score and seven ' + \
+'years ago...')

@@ -1,0 +1,58 @@
+Exercícios práticos
+1. O que é []?
+Serve para delimitar o tipo de dados list.
+
+2. Como você atribuiria o valor 'hello' como o terceiro valor de uma lista armazenada em uma variável chamada spam? (Suponha que spam contenha [2, 4, 6, 8, 10].)
+span.inset(2, 'hello')
+
+Para as três perguntas a seguir, vamos supor que spam contenha a lista ['a', 'b', 'c', 'd'].
+3. Para que valor spam[int(int('3' * 2) / 11)] é avaliado?
+'d'
+
+4. Para que valor spam[-1] é avaliado?
+'d'
+
+5. Para que valor spam[:2] é avaliado?
+['a', 'b']
+
+Para as três perguntas a seguir, vamos supor que bacon contenha a lista [3.14, 'cat', 11, 'cat', True].
+6. Para que valor bacon.index('cat') é avaliado?
+1
+
+7. Como bacon.append(99) altera o valor de lista em bacon?
+Adiciona 99 ao final da lista
+
+8. Como bacon.remove('cat') altera o valor de lista em bacon?
+Remove a primeira aparição de cat na lista
+
+9. Quais são os operadores para concatenação de lista e para repetição de lista?
++ para concatenação
+* para repetição
+
+10. Qual é a diferença entre os métodos de lista append() e insert()?
+append() insere um dado passado por parâmetro no fim da lista;
+insert() permite que seja passada a posição que você quer inserir o novo dado;
+
+11. Quais são as duas maneiras de remover valores de uma lista?
+pop() remove um item do fim da lista
+remove() remove o primeiro item encontrado na lista que foi passado por parâmetro na função
+
+12. Nomeie alguns aspectos em relação aos quais os valores de lista são semelhantes aos valores de string.
+Podemos iterar listas e string;
+Podemos usar slices para extrair valores importantes
+
+13. Qual é a diferença entre listas e tuplas?
+Listas tem os seus vaores mutáveis, ja as tuplas não;
+
+14. Como você deve digitar o valor de uma tupla que contenha somente o valor inteiro 42?
+tupla = (42,)
+
+15. Como podemos obter a forma de tupla de um valor de lista? Como podemos obter a forma de lista de um valor de tupla?
+Com as funções tuple() e list()
+
+16. As variáveis que “contêm” valores de lista não contêm realmente as listas diretamente. O que elas contêm em seu lugar?
+Contêm a referência para um espaço alocado na memória;
+
+17. Qual é a diferença entre copy.copy() e copy.deepcopy()?
+copy.copy() retorna os valores de uma lista para serem atribuido a uma nova varável, com uma nova referência
+copy.deepcopy() tem a mesma função de copy, porém usamos se tiveremos uma lista de listas para copiar os novos valores
