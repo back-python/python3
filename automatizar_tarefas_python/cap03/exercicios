@@ -6,6 +6,7 @@ Com o uso de funções podemos estruturar melhor nossos programas, e evitar que 
 Quando a função é chamada.
 
 3. Que instrução cria uma função?
+A instrução def.
 def <nome_da_função>():
     pass
 
@@ -17,7 +18,7 @@ Apenas um escopo global
 Podemos ter diversos
 
 6. O que acontece às variáveis em um escopo local quando a chamada da função retorna?
-O valor da variável é destruído.
+O valor da variável local é destruído.
 
 7. O que é um valor de retorno? Um valor de retorno pode fazer parte de uma expressão?
 É um valor retornada de uma função, pode sim.
@@ -29,7 +30,7 @@ None.
 Podemos definir a variável como global dentro da função, utilizando a palavra global.
 
 10. Qual é o tipo de dado de None?
-Valor nulo, sem valor.
+Do tipo NoneType.
 
 11. O que a instrução import areallyourpetsnamederic faz?
 Importa o módulo areallyourpetsnamederic
