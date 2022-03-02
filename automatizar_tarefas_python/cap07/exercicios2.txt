@@ -1,0 +1,96 @@
+Exercícios práticos
+1. Qual é a função que cria objetos Regex?
+re.compile('Padrão RegEx')
+
+2. Por que as strings puras (raw strings) geralmente são usadas na criação de objetos Regex?
+Como as RegEx fazem uso de barra invertida para montar o seu padrão, passamos a string como pura em vez de duplicar o uso da barra invertida
+
+3. O que o método search() retorna?
+Retorna um objeto match se um padrao for encontrado, ou None se nada for encontrado
+
+4. Como podemos obter as strings correspondentes ao padrão a partir de um objeto Match?
+Usando o método group()
+
+5. Na regex criada a partir de r'(\d\d\d)-(\d\d\d-\d\d\d\d)', o que o grupo 0 inclui? E o grupo 1? E o grupo 2?
+0 -> Inclui tudo
+1 -> Apenas o código de área
+2 -> Apenas o número
+
+6. Os parênteses e os pontos têm significados específicos na sintaxe das expressões regulares. Como podemos especificar uma regex que corresponda aos caracteres que representam parênteses e pontos?
+Podemos escapar esses valores com o uso de '\'.
+
+7. O método findall() retorna uma lista de strings ou uma lista de tuplas de strings. O que faz com que uma ou outra opção seja retornada?
+Os dois. Se o padrao possuir grupos, retorna uma lista de tuplas de strings, se não possuir, uma lista de strings.
+
+8. O que o caractere | representa em expressões regulares?
+Alternação, quando queremos que um padrão se refira a dois valores, ou mais
+
+9. Quais são os dois significados do caractere ? em expressões regulares?
+Significa que o elemento pode aparecer uma ou zero vezes.
+
+10. Qual é a diferença entre os caracteres + e * em expressões regulares?
++ -> corresponde a um ou mais;
+* -> corresponde a zero ou mais.
+
+11. Qual é a diferença entre {3} e {3,5} em expressões regulares?
+{3} -> Significa que um padrão vai se repetir por 3x
+{3, 5} -> Significa que um padrão poderá se repetir de 3 a 5 vezes.
+
+12. O que as classes abreviadas de caracteres \d, \w e \s representam em expressões regulares?
+\d -> Refere-se a digitos de 0 a 9.
+\w -> Refere-se a alfanuméricos e _.
+\s -> Refere-se a espaços em branco e tabulações.
+
+13. O que as classes abreviadas de caracteres \D, \W e \S representam em expressões regulares?
+É como se fosse a negação das classes acima.
+
+14. Como podemos fazer uma expressão regular ignorar as diferenças entre letras maiúsculas e minúsculas (ser case-insensitive)?
+Passar re.I ou re.IGNORECASE como segundo argumento de re.compile() fará a correspondência ignorar a diferença entre letras maiúsculas e minúsculas.
+
+15. A que o caractere . normalmente corresponde? A que ele corresponderá se re.DOTALL for passado como segundo argumento de re.compile()?
+O caractere . normalmente corresponde a qualquer caractere, exceto o caractere de quebra de linha. Se re.DOTALL for passado como segundo argumento de re.compile(), o ponto também corresponderá aos caracteres de quebra de linha.
+
+16. Qual é a diferença entre .* e .*??
+.* realiza uma correspondência greedy e .*? realiza uma correspondência nongreedy.
+
+17. Qual é a sintaxe da classe de caracteres que corresponde a todos os números e a todas as letras minúsculas?
+\w
+
+18. Se numRegex = re.compile(r'\d+'), o que numRegex.sub('X', '12 drummers, 11 pipers, five rings, 3 hens') retornará?
+X no lugar de todos os números.
+
+19. O que a especificação de re.VERBOSE como segundo argumento de re.compile() permite fazer?
+O argumento re.VERBOSE permite adicionar espaços em branco e comentários à string passada para re.compile().
+
+20. Como você poderá escrever uma regex que corresponda a um número com vírgulas a cada três dígitos? Ela deverá corresponder a:
+• '42'
+• '1,234'
+• '6,368,745'
+mas não a:
+• '12,34,567' (que tem somente dois dígitos entre as vírgulas)
+• '1234' (que não tem vírgulas)
+\d{1,3}(,\d{3})*
+
+21. Como você poderá escrever uma regex que corresponda ao nome completo de alguém cujo sobrenome seja Nakamoto? Suponha que o primeiro nome que vem antes dele sempre seja uma única palavra que comece com uma letra maiúscula. A regex deverá corresponder a:
+• 'Satoshi Nakamoto'
+• 'Alice Nakamoto'
+• 'RoboCop Nakamoto'
+mas não a:
+• 'satoshi Nakamoto' (em que o primeiro nome não começa com letra maiúscula)
+• 'Mr. Nakamoto' (em que a palavra anterior tem um caractere que não é uma letra)
+• 'Nakamoto' (que não tem primeiro nome)
+• 'Satoshi nakamoto' (em que Nakamoto não começa com letra maiúscula)
+([A-Z]\w+)\s(Nakamoto)
+
+22. Como você poderá escrever uma regex que corresponda a uma frase em que a primeira palavra seja Alice, Bob ou Carol, a segunda palavra seja eats, pets ou throws, a terceira palavra seja apples, cats ou baseballs e a frase termine com um ponto? Essa regex não deve diferenciar letras
+maiúsculas de minúsculas. Ela deverá corresponder a:
+• 'Alice eats apples.'
+• 'Bob pets cats.'
+• 'Carol throws baseballs.'
+• 'Alice throws Apples.'
+• 'BOB EATS CATS.'
+mas não a:
+• 'RoboCop eats apples.'
+• 'ALICE THROWS FOOTBALLS.'
+• 'Carol eats 7 cats.'
+re.compile(r'(alice|bob|carol)\s(eats|pets|throws)\s(apples|cats|baseballs)\.', re.IGNORECASE)
