@@ -16,10 +16,12 @@
 ## Descrição do Projeto
 
 Neste projeto foram construídos dois jogos para treinar os fundamentos da linguagem python
+Neste projeto também consta a resolução de exercícios do livro automatize tarefas com Python
 
 ## Funcionalidades e Demonstração da Aplicação
 - `Jogo 01 - Adivinhação` O jogador deve adivinhar um número 'pensado' pelo computador;
-- `Jogo 02 - Forca ` O jogo possui diversas palavra separadas por categorias em arquivos externos. Quando o usuário escolher a categoria o programa sorteia uma palavra com base nessa categoria, e da ao usuário 7 chances para acertá-la.
+- `Jogo 02 - Forca` O jogo possui diversas palavra separadas por categorias em arquivos externos. Quando o usuário escolher a categoria o programa sorteia uma palavra com base nessa categoria, e da ao usuário 7 chances para acertá-la.
+- `Jogo 03 - JOKENPO` Jogo de pedra, papel e tesoura. Construido com Python.
 
 ## Acesso ao Projeto
 
